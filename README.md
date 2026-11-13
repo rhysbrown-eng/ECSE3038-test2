@@ -25,7 +25,7 @@ sudo systemctl stop iot-api
    
 ```bash
 git clone https://github.com/rhysbrown-eng/ECSE3038-test2.git
-cd ECSE3038-mock-test2/api
+cd ECSE3038-test2/api
 python3 -m venv venv
 source venv/bin/activate
 python -m pip install -r requirements.txt
