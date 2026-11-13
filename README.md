@@ -24,7 +24,7 @@ sudo systemctl stop iot-api
 3. Clone repo, open the `api/` folder then create and activate the environment:
    
 ```bash
-git clone https://github.com/rhysbrown-eng/ECSE3038-mock-test2.git
+git clone https://github.com/rhysbrown-eng/ECSE3038-test2.git
 cd ECSE3038-mock-test2/api
 python3 -m venv venv
 source venv/bin/activate
