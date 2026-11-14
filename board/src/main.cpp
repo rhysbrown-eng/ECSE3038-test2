@@ -160,7 +160,9 @@ void on_message(char *topic, byte *payload, unsigned int length) {
           Serial.print(fanMode);
           Serial.print(", ");
           Serial.println(maxHumidity);
-          update_led(); // React immediately as per B4
+          float h = dht.getHumidity();
+          if (!isnan(h)) lastHumidity = h;
+          update_led();
       } else {
           Serial.println("Bad settings: unchanged.");
       }
